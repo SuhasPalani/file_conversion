@@ -17,9 +17,11 @@ const FileUploader = ({ setFile, file }) => {
     <motion.div
       {...getRootProps()}
       className={`border-2 border-dashed rounded-lg p-8 text-center cursor-pointer transition-all duration-300 ease-in-out mb-6
-        ${isDragActive
-          ? "border-blue-400 bg-blue-50"
-          : "border-gray-300 hover:border-gray-400 hover:bg-gray-50"}`}
+        ${
+          isDragActive
+            ? "border-blue-400 bg-blue-50"
+            : "border-gray-300 hover:border-gray-400 hover:bg-gray-50"
+        }`}
       whileHover={{ scale: 1.02 }}
       whileTap={{ scale: 0.98 }}
     >
@@ -37,7 +39,7 @@ const FileUploader = ({ setFile, file }) => {
           <div>
             <FiUploadCloud className="mx-auto text-4xl text-gray-400 mb-4" />
             <p className="text-lg text-gray-600 mb-2">
-              Drag 'n' drop a file here, or click to select a file
+              Drag &apos;n&apos; drop a file here, or click to select a file
             </p>
             <p className="text-sm text-gray-500">
               Supported formats: MP3, WAV, PDF, DOCX, TXT
